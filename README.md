@@ -29,7 +29,7 @@ services:
       context: ./grafana
     container_name: grafana
     ports:
-      - 9000:3000
+      - 3000:3000
     volumes:
       - grafana-data:/var/lib/grafana
 # Explicitly define the persistent volume for your data storage
@@ -179,5 +179,5 @@ $ docker compose up
 # Step 4
 See:
 ```bash
-http://localhost:9000.
+http://localhost:3000.
 ```
